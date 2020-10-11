@@ -2106,7 +2106,7 @@ function Ace2Inner(){
 
   function doRepApplyChangeset(changes, insertsAfterSelection)
   {
-    Changeset.checkRep(changes);
+    //Changeset.checkRep(changes);
 
     if (Changeset.oldLen(changes) != rep.alltext.length) throw new Error("doRepApplyChangeset length mismatch: " + Changeset.oldLen(changes) + "/" + rep.alltext.length);
 
