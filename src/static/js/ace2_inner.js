@@ -709,8 +709,8 @@ function Ace2Inner(){
     assem.append(o);
     Changeset.appendATextToAssembler(atext, assem);
     var newLen = oldLen + assem.getLengthChange();
-    var changeset = Changeset.checkRep(
-    Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1)));
+    //var changeset = Changeset.checkRep(Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1)));
+    var changeset = Changeset.pack(oldLen, newLen, assem.toString(), atext.text.slice(0, -1));	  	  
     performDocumentApplyChangeset(changeset);
 
     performSelectionChange([0, rep.lines.atIndex(0).lineMarker], [0, rep.lines.atIndex(0).lineMarker]);
