@@ -719,9 +719,9 @@ function Ace2Inner(){
 
     if (rep.alltext != atext.text)
     {
-      dmesg(htmlPrettyEscape(rep.alltext));
-      dmesg(htmlPrettyEscape(atext.text));
-      throw new Error("mismatch error setting raw text in setDocAText");
+      //dmesg(htmlPrettyEscape(rep.alltext));
+      //dmesg(htmlPrettyEscape(atext.text));
+      //throw new Error("mismatch error setting raw text in setDocAText");
     }
   }
 
